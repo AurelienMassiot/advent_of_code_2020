@@ -12,6 +12,7 @@ def test_select_two_entries_in_example_when_one_entry_is_first():
     # Then
     assert actual == expected_two_entries
 
+
 def test_select_two_entries_in_example_when_one_entry_is_not_first():
     # Given
     expense_report = [979, 1721, 366, 299, 675, 1456]
@@ -22,6 +23,7 @@ def test_select_two_entries_in_example_when_one_entry_is_not_first():
 
     # Then
     assert actual == expected_two_entries
+
 
 def test_select_three_entries_in_example_when_one_entry_is_first():
     # Given
@@ -37,7 +39,7 @@ def test_select_three_entries_in_example_when_one_entry_is_first():
 
 def test_select_three_entries_in_example_when_one_entry_is_not_first():
     # Given
-    expense_report = [1721, 979,  366, 299, 675, 1456]
+    expense_report = [1721, 979, 366, 299, 675, 1456]
     expected_three_entries = 979, 366, 675
 
     # When
