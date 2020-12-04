@@ -2,7 +2,7 @@ import re
 from itertools import compress
 
 
-def read_input(filename):
+def read_text_file_with_blank_spaces(filename):
     with open(filename) as f:
         contents = f.read()
     passports_list = contents.split('\n\n')
@@ -23,7 +23,7 @@ def is_passport_valid_first_stage(passport_dict):
 
 
 def count_valid_passports_first_star(filename):
-    passports_list = read_input(filename)
+    passports_list = read_text_file_with_blank_spaces(filename)
     split_passwords_list = [split_passport(passport) for passport in passports_list]
     are_passports_valid = [is_passport_valid_first_stage(passport_dict) for passport_dict in split_passwords_list]
     return sum(are_passports_valid)
@@ -77,7 +77,7 @@ def is_passport_valid_second_stage(passport_dict):
 
 
 def count_valid_passports_second_star(filename):
-    passports_list = read_input(filename)
+    passports_list = read_text_file_with_blank_spaces(filename)
     split_passwords_list = [split_passport(passport) for passport in passports_list]
     are_passports_valid = [is_passport_valid_first_stage(passport_dict) for passport_dict in split_passwords_list]
     valid_split_passwords_list_after_stage_1 = list(compress(split_passwords_list, are_passports_valid))

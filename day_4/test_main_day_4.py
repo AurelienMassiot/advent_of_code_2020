@@ -3,7 +3,7 @@ from main_day_4 import is_passport_valid_first_stage, count_valid_passports_firs
 
 
 def test_is_password_valid_first_passport_8_fields():
-    # Given
+    # Givenn
     passport = 'ecl:gry pid:860033327 eyr:2020 hcl:#fffffd byr:1937 iyr:2017 cid:147 hgt:183cm'
 
     # When #Then
@@ -11,7 +11,7 @@ def test_is_password_valid_first_passport_8_fields():
 
 
 def test_is_password_not_valid_second_passport_missing_height_7_fields():
-    # Given
+    # Givenn
     passport = 'iyr:2013 ecl:amb cid:350 eyr:2023 pid:028048884 hcl:#cfa07d byr:1929'
 
     # When #Then
@@ -19,7 +19,7 @@ def test_is_password_not_valid_second_passport_missing_height_7_fields():
 
 
 def test_is_password_valid_third_passport_missing_cid_passport_7_fields():
-    # Given
+    # Givenn
     passport = 'hcl:#ae17e1 iyr:2013 eyr:2024 ecl:brn pid:760753108 byr:1931 hgt:179cm'
 
     # When #Then
@@ -27,7 +27,7 @@ def test_is_password_valid_third_passport_missing_cid_passport_7_fields():
 
 
 def test_is_password_valid_third_missing_cid_passport_7_fields():
-    # Given
+    # Givenn
     passport = 'hcl:#cfa07d eyr:2025 pid:166559648 iyr:2011 ecl:brn hgt:59in'
 
     # When #Then
@@ -35,7 +35,7 @@ def test_is_password_valid_third_missing_cid_passport_7_fields():
 
 
 def test_count_passports_on_sample():
-    # Give
+    # Given
     filename = 'test_input.txt'
     expected_n = 2
 
@@ -46,7 +46,7 @@ def test_count_passports_on_sample():
 
 
 def test_hcl():
-    # Give
+    # Given
     hcl_valid_1 = '#123abc'
     hcl_invalid_2 = '#123abz'
     hcl_invalid_3 = '123abc'
@@ -57,7 +57,7 @@ def test_hcl():
 
 
 def test_hgt():
-    # Give
+    # Given
     hgt_valid_1 = '60in'
     hgt_valid_2 = '190cm'
     hgt_invalid_3 = '190in'
@@ -70,7 +70,7 @@ def test_hgt():
 
 
 def test_ecl():
-    # Give
+    # Given
     hcl_valid_1 = 'brn'
     hcl_invalid_2 = 'wat'
 
@@ -79,7 +79,7 @@ def test_ecl():
 
 
 def test_second_star():
-    # Give
+    # Given
     filename = 'test_input.txt'
     expected_n = 2
 
@@ -90,7 +90,7 @@ def test_second_star():
 
 
 def test_second_star_invalid_passports():
-    # Give
+    # Given
     filename = 'test_invalid_passports.txt'
     expected_n = 0
 
@@ -101,7 +101,7 @@ def test_second_star_invalid_passports():
 
 
 def test_second_star_valid_passports():
-    # Give
+    # Given
     filename = 'test_valid_passports.txt'
     expected_n = 4
 
