@@ -1,4 +1,4 @@
-from main import select_the_two_entries, select_the_three_entries
+from main_day_1 import select_the_two_entries, select_the_three_entries
 
 
 def test_select_two_entries_in_example_when_one_entry_is_first():
