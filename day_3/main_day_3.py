@@ -12,7 +12,7 @@ def move(wide, x, y, move_down, move_right):
 
 
 def is_tree(location):
-    return True if location == '#' else False
+    return location == '#'
 
 
 def traverse_map(map, move_down, move_right):
