@@ -39,3 +39,9 @@ def convert_list_str_to_int(list_str):
 [1, 4]
 ```
 
+### [Day 5: Binary Boarding](https://adventofcode.com/2020/day/5)
+- [Convet a base-2 binary number string to int](https://stackoverflow.com/questions/8928240/convert-base-2-binary-number-string-to-int):
+```python
+>> int('11111111', base=2)
+255
+```
