@@ -1,4 +1,4 @@
-from day_7.main_day_7 import *
+from day_07.main_day_7 import *
 
 #FIXME Tests are currently dependent, because of side effects from the visited dictionary
 
