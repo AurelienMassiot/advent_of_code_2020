@@ -1,14 +1,20 @@
+from itertools import combinations
+
 def read_text_file_lines(input_file_path):
     with open(input_file_path, 'r') as input_file:
         return [int(line) for line in input_file.read().splitlines()]
 
 
+# def is_valid_sum(n_list, index, preamble_number):
+#     for first_cursor in range(index - preamble_number, index - 1):
+#         for second_cursor in range(index - preamble_number + 1, index):
+#             if n_list[first_cursor] + n_list[second_cursor] == n_list[index]:
+#                 return True
+#     return False
+#
+
 def is_valid_sum(n_list, index, preamble_number):
-    for first_cursor in range(index - preamble_number, index - 1):
-        for second_cursor in range(index - preamble_number + 1, index):
-            if n_list[first_cursor] + n_list[second_cursor] == n_list[index]:
-                return True
-    return False
+    return any((sum(comb) == n_list[index]) for comb in combinations(n_list[index - preamble_number:index], 2))
 
 
 def find_incorrect_number(n_list, preamble_number):
