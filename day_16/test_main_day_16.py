@@ -45,7 +45,6 @@ def test_find_correct_rules_from_possible_rules():
     # Given
     possible_rules = {'class': [0, 1], 'row': [0], 'seat': [2]}
 
-    #
     # When
     order = find_correct_rules_from_possible_rules(possible_rules)
 
